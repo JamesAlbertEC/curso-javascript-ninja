@@ -2,7 +2,7 @@
 Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 - ao menos 5 - (fica por sua conta os valores do array).
 */
-var array = ['casa', 1, NaN, {1: x}, function() {}]
+var array = ['casa', 1, NaN, {1: 'x'}, function() {}]
 
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
@@ -29,7 +29,7 @@ var fun2 = function (x, y){
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-var vari = ['casa', 8, false, {x: a}, [1, 2, 3]]
+var vari = ['casa', 8, false, {x: 'a'}, [1, 2, 3]]
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
@@ -55,19 +55,19 @@ os livros.
 */
 function book (bookName) {
     var obj = {
-        'João e Maria' : {
+        'João e Maria': {
             quantidadeDePaginas: 300,
             autor: 'Carlos',
             editora: 'Roland'
-        }
-        'João e o pé de feijão' : {
+        },
+        'João e o pé de feijão': {
             quantidadeDePaginas: 289,
             autor: 'Ana',
             editora: 'Mont'
-        }
-        'Lord King' : {
+        },
+        'Lord King': {
             quantidadeDePaginas: 174,
-            autor: 'Paulo'
+            autor: 'Paulo',
             editora: 'Crist'
         }
     }
@@ -85,14 +85,15 @@ Ainda com a função acima, imprima a quantidade de páginas de um livro qualque
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-console.log('O livro ' + bookName + ' tem ' + book(bookName)[quantidadeDePaginas] + 'páginas!');
+var bookName = 'Lord King';
+console.log('O livro ' + bookName + ' tem ' + book(bookName).quantidadeDePaginas + ' páginas!');
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-console.log('O autor do livro ' + bookName + ' é ' + book(bookName)[autor] + '.');
+console.log('O autor do livro ' + bookName + ' é ' + book(bookName).autor + '.');
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
@@ -100,4 +101,4 @@ a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
 
-console.log('O livro ' + bookName + ' foi publicado pela editora ' + book(bookName)[editora] + '.');
+console.log('O livro ' + bookName + ' foi publicado pela editora ' + book(bookName).editora + '.');
