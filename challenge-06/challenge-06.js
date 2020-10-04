@@ -36,21 +36,21 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
 function showTeamPosition(number) {
     switch(number) {
         case 1:
-            return console.log('O time que está em ' + number + 'º lugar é o ' + teams[0]);
+            return 'O time que está em ' + number + 'º lugar é o ' + teams[0];
             break;
         case 2:
-            return console.log('O time que está em ' + number + 'º lugar é o ' + teams[1]);
+            return 'O time que está em ' + number + 'º lugar é o ' + teams[1];
             break;
         case 3:
-            return console.log('O time que está em ' + number + 'º lugar é o ' + teams[2]);
+            return 'O time que está em ' + number + 'º lugar é o ' + teams[2];
             break;
         case 4:
-            return console.log('O time que está em ' + number + 'º lugar é o ' + teams[3]);
+            return 'O time que está em ' + number + 'º lugar é o ' + teams[3];
             break;
         case 5:
-            return console.log('O time que está em ' + number + 'º lugar é o ' + teams[4]);
+            return 'O time que está em ' + number + 'º lugar é o ' + teams[4];
         default:
-            console.log('Não temos a informação do time que está nessa posição.');
+            return 'Não temos a informação do time que está nessa posição.';
     }
 }
 
@@ -104,9 +104,9 @@ function convertToHex(color) {
             hexadecimal = '#8B4513';
             break;
         default:
-            return console.log('Não temos o equivalente hexadecimal para ' + color + '.');
+            return 'Não temos o equivalente hexadecimal para ' + color + '.';
     }
-    return console.log('O hexadecimal para a cor ' + color + ' é ' + hexadecimal + '.');            
+    return 'O hexadecimal para a cor ' + color + ' é ' + hexadecimal + '.';            
 }
 
 
